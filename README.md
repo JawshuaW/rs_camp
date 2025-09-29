@@ -3,7 +3,9 @@ Camp Placement Script
 
 original:
 https://github.com/riversafe33/Rs-Camp-V2
+
 All credit goes to: riversafe33
+
 Github: https://github.com/riversafe33
 
 This script lets players build persistent camps with placeable props (tents, chests, doors, etc.). Objects are saved to SQL and survive restarts, and you can remove them via the target system (/camp). Chests integrate with vorp_inventory as custom storages; only the owner (or players explicitly shared with) can open them. Doors support open/close with the same permission model. Items can optionally clear vegetation around them (per-item radius in config.lua).
