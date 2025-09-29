@@ -2,12 +2,13 @@ Camp Placement Script
 
 Dependency
 
-https://github.com/riversafe33/uiprompt
+original:
+https://github.com/riversafe33/Rs-Camp-V2
 
-This script allows you to create camps in the game, with the option to place chests and use them to store items. 
-Each chest can only be opened by the person who placed it. It includes a command to activate the target system to remove placed objects, 
-as these are saved in the SQL database, allowing you to set up camps that will remain even after the server restarts. 
-It’s fully configurable, letting you add as many props as you want in the config.lua.
+This script lets players build persistent camps with placeable props (tents, chests, doors, etc.). Objects are saved to SQL and survive restarts, and you can remove them via the target system (/camp). Chests integrate with vorp_inventory as custom storages; only the owner (or players explicitly shared with) can open them. Doors support open/close with the same permission model. Items can optionally clear vegetation around them (per-item radius in config.lua).
+Tents-only blips: when a player places a tent (items marked blip = true), a personal map blip is created only for that player, restored on reconnect, and automatically removed when the tent is picked up. Other props never create blips.
+One tent limit: each player can have one tent placed at a time. If they already have a tent in the world, tent placement is blocked until they pick it up.
+Everything is configurable: add as many props as you like in config.lua, tune per-item storage capacity, vegetation radius, prompt keys, and blip behavior.
 
 ![20250904024910_1](https://github.com/user-attachments/assets/75dc4e4c-1b57-4b76-a695-890d6b60d956)
 
