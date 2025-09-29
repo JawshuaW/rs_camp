@@ -1,6 +1,5 @@
 Camp Placement Script
 
-Dependency
 
 original:
 https://github.com/riversafe33/Rs-Camp-V2
